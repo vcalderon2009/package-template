@@ -36,9 +36,10 @@ env:
         - EVENT_TYPE='pull_request push'
 
         
-        # List other runtime dependencies for the package that are available as
-        # conda packages here.
-        - CONDA_DEPENDENCIES=''
+        # For this package-template, we include examples of Cython modules,
+        # so Cython is required for testing. If your package does not include
+        # Cython code, you can set CONDA_DEPENDENCIES=''
+        - CONDA_DEPENDENCIES='Cython'
         
         # List other runtime dependencies for the package that are available as
         # pip packages here.

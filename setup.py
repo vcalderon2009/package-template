@@ -5,6 +5,11 @@ import glob
 import os
 import sys
 
+# Enforce Python version check during package import.
+# This is the same check as packagename/__init__.py but this one has to
+# happen before importing ah_bootstrap.
+
+
 import ah_bootstrap
 from setuptools import setup
 
@@ -136,5 +141,6 @@ setup(name=PACKAGENAME,
       zip_safe=False,
       use_2to3=False,
       entry_points=entry_points,
+
       **package_info
 )

@@ -6,6 +6,10 @@
 from ._astropy_init import *
 # ----------------------------------------------------------------------------
 
+# Enforce Python version check during package import.
+# This is the same check as the one at the top of setup.py
+
+
 if not _ASTROPY_SETUP_:
     # For egg_info test builds to pass, put package imports here.
 

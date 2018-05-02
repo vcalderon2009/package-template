@@ -38,7 +38,7 @@ can be done easily using conda or pip::
 
 Once you have cookiecutter installed you can run::
 
-  cookiecutter gh:astropy/package-template
+  cookiecutter -c cookiecutter gh:vcalderon2009/package-template
 
 Which will ask you a series of questions to configure your package.
 

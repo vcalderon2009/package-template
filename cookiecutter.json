@@ -25,5 +25,5 @@
     ],
     "minimum_python_version": ["2.7", "3.5", "3.6"],
     "astropy_helpers_version": "{% if cookiecutter.minimum_python_version == '2.7' %}v2.0.6{% else %}v3.0.1{% endif %}",
-    "use_pytest": "n",
+    "use_pytest": "n"
 }
